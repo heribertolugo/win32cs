@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +41,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\ClassStyles.cs" />
+    <Compile Include="Constants\FileAttribute.cs" />
+    <Compile Include="Constants\FormatMessageFlags.cs" />
+    <Compile Include="Constants\GwlCodes.cs" />
+    <Compile Include="Constants\HitTestMousePositionCodes.cs" />
+    <Compile Include="Constants\HRESULT.cs" />
+    <Compile Include="Constants\ImageListDrawItem.cs" />
+    <Compile Include="Constants\ImageListDrawState.cs" />
+    <Compile Include="Constants\MessageCodes.cs" />
+    <Compile Include="Constants\MSHCTX.cs" />
+    <Compile Include="Constants\MSHLFLAGS.cs" />
+    <Compile Include="Constants\ScrollBarCommands.cs" />
+    <Compile Include="Constants\ShellIconFlags.cs" />
+    <Compile Include="Constants\ShellIconState.cs" />
+    <Compile Include="Constants\SHGetFileInfo.cs" />
+    <Compile Include="Constants\STREAM_SEEK.cs" />
+    <Compile Include="Constants\SysImageListSize.cs" />
+    <Compile Include="Constants\SystemConsts.cs" />
+    <Compile Include="Constants\TreeViewExtendedStyles.cs" />
+    <Compile Include="Constants\TreeViewMessages.cs" />
+    <Compile Include="Constants\WindowHooks.cs" />
+    <Compile Include="Constants\WindowStyles.cs" />
+    <Compile Include="Constants\WindowStylesEx.cs" />
+    <Compile Include="Libraries\comctl32.cs" />
+    <Compile Include="Libraries\dwmapi.cs" />
+    <Compile Include="Libraries\Gdi32.cs" />
+    <Compile Include="Libraries\kernal32.cs" />
+    <Compile Include="Libraries\ole32.cs" />
+    <Compile Include="Libraries\shell32.cs" />
+    <Compile Include="Libraries\shlwapi.cs" />
+    <Compile Include="Libraries\user32.cs" />
+    <Compile Include="Libraries\uxtheme.cs" />
+    <Compile Include="Models\DWORD.cs" />
+    <Compile Include="Models\IImageList.cs" />
+    <Compile Include="Models\IMAGEINFO.cs" />
+    <Compile Include="Models\IMAGELISTDRAWPARAMS.cs" />
+    <Compile Include="Models\MARGINS.cs" />
+    <Compile Include="Models\MSLLHOOKSTRUCT.cs" />
+    <Compile Include="Models\POINT.cs" />
+    <Compile Include="Models\RECT.cs" />
+    <Compile Include="Models\SHFILEINFO.cs" />
+    <Compile Include="Models\SystemTime.cs" />
+    <Compile Include="MouseListenerLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
