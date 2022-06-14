@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using Win32.Constants;
 using Win32.Models;
 
 namespace Win32.Libraries
@@ -11,10 +12,10 @@ namespace Win32.Libraries
         [DllImport("shell32.dll")]
         public static extern IntPtr SHGetFileInfo(
           string pszPath,
-          uint dwFileAttributes,
+          FileAttribute dwFileAttributes,
           ref SHFILEINFO psfi,
           uint cbSizeFileInfo,
-          uint uFlags);
+          SHGetFileInfo uFlags);
 
         [DllImport("shell32.dll", EntryPoint = "#727")]
         public static extern int SHGetImageList(
