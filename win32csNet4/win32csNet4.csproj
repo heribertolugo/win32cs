@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\ClassStyles.cs" />
+    <Compile Include="Constants\FileAccessRights.cs" />
     <Compile Include="Constants\FileAttribute.cs" />
     <Compile Include="Constants\FormatMessageFlags.cs" />
     <Compile Include="Constants\GwlCodes.cs" />
@@ -53,7 +54,6 @@
     <Compile Include="Constants\MSHCTX.cs" />
     <Compile Include="Constants\MSHLFLAGS.cs" />
     <Compile Include="Constants\ScrollBarCommands.cs" />
-    <Compile Include="Constants\ShellIconFlags.cs" />
     <Compile Include="Constants\ShellIconState.cs" />
     <Compile Include="Constants\SHGetFileInfo.cs" />
     <Compile Include="Constants\STREAM_SEEK.cs" />
